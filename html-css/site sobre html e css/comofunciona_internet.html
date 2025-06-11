@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Como funciona a internet</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main>
+    <h1>O Funcionamento da Internet</h1>
+    <h2>Medidas de Grandeza</h2>
+    <p>
+        O computador funciona de forma binaria, interpreta apenas duas ondas: 0 e 1.
+    </p>
+    <p>
+        Para a medida de grandeza são usaos as seguintes unidades:
+    <ol>
+        <li>bit - menor unidade de medida que um computador possível (armazena 0 ou 1);</li>
+        <li>Byte - O byte é a junção de 8 bits, formando assim uma sequência de 8 valores que podem ser 1 ou 0;</li>
+        <li>Kilobyte (KB) - 1.000 bytes;</li>
+        <li>Megabyte (MB) - 1.000.000 bytes ou então 8.388.608 bits;</li>
+        <li>Gigabyte (GB) - 1.000.000.000 bytes ou então 8.589.934.592 bits; </li>
+        <li>Terabyte (TB) - 1.000.000.000.000 bytes ou então 8.796.093.022.208 bits;</li>
+        <li>Petabyte (PB) - 1.000.000.000.000.000 bytes ou então 9.007.199.254.740.992 bits;</li>
+    </ol>
+    </p>
+    <h2>Como fazer a conversão de bytes para bits?</h2>
+    <p>
+        A conversão de bytes para bits é feita de maneira muito simples: basta que você multiplique o valor de seus
+        bytes por 8. Esse cálculo é possível porque cada byte equivale a exatamente 8 bits, sendo assim, para o valor de
+        512 bytes, temos: 512 * 8 = 4096 bits
+    </p>
+    <h2>A Velocidade da Internet</h2>
+    <p>
+        A <mark>velocidade da internet é medida em bits</mark>, mais especificamente em bits por segundo. O motivo para
+        isso é que o
+        valor calculado em bits é muito mais atrativo do que em bytes, por exemplo: um anúncio de internet com 100
+        “megas” é de 100 megabits por segundo, que convertido para bytes se torna 12.5 megabytes por segundo, um valor 8
+        vezes menor do que o anunciado.
+    </p>
+    <p>
+        Além disso, diferentemente das medidas de armazenamento, a velocidade de conexão com a internet não necessita de
+        valores extraordinariamente grandes, como gigabits, terabits ou até petabits
+    </p>
+    <h2>A internet vem do mar</h2>
+    <p>
+        A maior parte da comunicação da internet acontece através de cabeamento subáguatico, pouca parte da rede é feita
+        através de satélites, pois eles possuem uma limitação de tráfego e
+        sofrem muito com interferências, e é por isso que os cabos de fibra ótica devem ser passados pelos oceanos. Um
+        trabalho incalculável, mas necessário.
+    </p>
+    <P>
+        Mas não dá para esses cabos submarinos saírem pela praia e seguirem caminho até a sua casa, e por isso precisam
+        se interligar a outros sistemas de comunicação. Alguns dos sistemas utilizados sempre foram a telefonia
+        tradicional, os sistemas de TV a cabo, os sinais via satélite e até as simples redes de radiofrequência.
+    </P>
+    <p>
+        O problema é que os sistemas diferentes transmitem sinais em formatos diferentes (ANALÓGICOS E DIGITAIS). Isso
+        dificultaria a comunicação entre pontos, se não fosse um processo de “conversão”, mais conhecido como
+        <strong>MODULAÇÃO</strong>.
+    </p>
+    <P>
+        Uma das funções desse aparelho é MODULAR os sinais que saem e DEMODULAR os sinais que chegam. E é por isso que
+        chamamos esse aparelho de MODEM.
+    </P>
+    <p>
+        Os roteadores (do provedor de internet, não o que GATEWAY/MODEM que fica em sua casa) são os responsáveis por
+        escolheram as rotas que os dados irão tomar para irem do cliente ao servidor ou vice-versa.
+    </p>
+    <h2>Endereço de IP</h2>
+    <p>
+        Internet funciona baseada em um conjunto de protocolos chamado TCP/IP. Quando você “se conecta” à Internet,
+        recebe uma identificação única. Essa identificação é um <strong>ENDEREÇO IP</strong>.
+    </p>
+    <p>
+        Os IPs mais antigos (IPv4) usam 4 octetos, que são conjuntos de 8 bits separados por pontos, totalizando 32 bits
+        por identificador. <br>
+        Ex: <strong>123.45.67.89</strong> = 01111011.00101101.01000011.01011001 <br>
+        Os IPs mais modernos (IPv6), usam 128 bits ao todo (o que é 4x mais bits que o IPv4). <br> Ex:
+        <strong>2001:0db8:85a3:08d3:1319:8a2e:0370:7344</strong>
+    </p>
+    <h2>Acesso aos Servidores</h2>
+    <p>
+        <strong>DOMAIN NAME SYSTEM</strong> (DNS), serve para armazenar as URL para fazer o link entre o IP do cliente e
+        o do IP do servidor. (IP mudam constantemente e são díficeis de decorar por isso a necessecidade de DNS)
+    </p>
+    <h2> Domínio e Hospedagem</h2>
+    <p>
+        O domínio é um nome único que vai conseguir identificar o seu servidor ou as suas páginas. Para conseguir um
+        domínio, você deve pagar pelo direito de usá-lo por um período mínimo de 1 ano. (Ex: faetec.rj.gov.br;
+        github.io)
+    </p>
+    <p>
+        <strong>TOP LEVEL DOMAIN (TLD)</strong> é terminação do domínio, como por exemplo: .com, .or, .io...
+    </p>
+    <p>
+        GTLG - São TLDs genéricos, sem indicação de país. Alguns dos domínios genéricos são .com, .net, .gov, .org, .io,
+        .info, .online, .store, etc.
+    </p>
+    <p>
+        ccTLD: São TLDs com designação do país (coutry code). Alguns dos domínios desse tipo são .com.br, .edu.us,
+        .co.fr, .jp, .es, etc.
+    </p>
+    <p>
+        <strong>Sub-Domínio</strong> é o que vemantes do domínio. Podem ser vários, por exemplo: www. images. maps.
+        mail. etc.
+    </p>
+    <p>
+        Além do domínio e sub-domínio a URL também é composta por um protocolo, que pode ser HTTP:// ou HTTPS://,
+        dependendo se o seu servidor tem ou não segurança por SSL (serviço de criptografia de dados).
+    </p>
+    <p>
+        E por fim, a URl também pode ter um caminho extra, que indica pastas a percorrer para achar um arquivo
+        específico.(após a / que vem logo apos o TLD)
+    </p>
+    <h2>Hospedagem</h2>
+    <p>
+        É realizado por grandes DATA CENTERS, com uma grande infraestrutura para fornecer disponibilidade, segurança e
+        performace para guardar os arquivos. <br>Geralmente é pago anualmente o alugel do servidor.
+    </p>
+
+    <a href="index.html">Retorne ao Sumário</a>
+    </main>
+</body>
+
+</html>

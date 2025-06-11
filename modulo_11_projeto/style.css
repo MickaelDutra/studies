@@ -1,0 +1,184 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    display: flex;
+    margin: 0 auto;
+    width: 100%;
+
+}
+
+/* --cutomização do header-- */
+
+.header-itens {
+    justify-content: space-between;
+    align-items: center;
+    height: 150px;
+    width: 100%;
+    padding: 50px;
+    background-color: #0084F0;
+    color: aliceblue;
+    border-bottom: #002a4d;
+}
+
+.header-list li {
+    display: inline;
+    margin-right: 18px;
+}
+
+.header-list li a {
+    text-decoration: none;
+    color: aliceblue;
+    text-transform: uppercase;
+}
+
+/* --cutomização do header-- */
+
+/* -- customização do sobre a loja */
+
+.sobre-loja {
+    margin: 20px auto;
+    padding: 20px;
+        align-items: center;
+    justify-content: space-between;
+}
+
+.sobre-loja h2 {
+    text-align: center;
+    margin-left: 10px;
+    border-bottom: 3px solid #0084F0;
+}
+
+.sobre-loja img {
+    height: 300px;
+}
+
+.sobre-loja p {
+    text-align: justify;
+    padding: 15px;
+}
+
+/* -- customização do sobre a loja -- */
+
+/* -- customização de produtos -- */
+.card-container {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.lista_produtos>h2 {
+    font-size: 2em;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.lista_produtos {
+    width: 100%;
+    text-align: center;
+    padding: 20px;    
+}
+
+.lista_produtos img {
+    height: 150px;
+}
+
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(4, 24.5%); 
+    gap: 1%;
+    margin: 0 10px 0 10px;
+}
+
+.card {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 300px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+button{
+    border: none;
+    background-color: #0084F0;
+    color: aliceblue;
+    border-radius: 6px;
+    margin: 10px;
+    padding: 10px;
+}
+
+/* -- customização de produtos -- */
+
+/* cutomização do Media Query até 640px*/
+
+@media screen and (max-width: 640px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .sobre-loja {
+        display: block;
+        padding: 10px;
+        text-align: center;
+    }
+
+    .sobre-loja img {
+        height: 280px;
+        width: 100%;
+    }
+
+    .card-container {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr); 
+        gap: 18px;
+    }
+
+    .card {
+        width: 90%;
+        margin: 10px auto;
+        
+    }
+}
+
+/* media query de 641px até 1024px */
+
+@media screen and (min-width: 641px) and (max-width: 1023px) {
+    .container {
+        flex-direction: column;
+        display: flex;
+    }
+
+    .sobre-loja {
+        display: block;
+        padding: 10px;
+        text-align: center;
+    }
+
+    .sobre-loja img {
+        height: 280px;
+        width: 100%;
+    }
+
+    .card-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); 
+        gap: 15px;
+    }
+
+    .card {
+        width: 90%;
+        margin: 10px auto;
+        flex-wrap: wrap;
+    }
+
+}

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalhando com Links</title>
+</head>
+<body>
+    <h1>Usando links externos</h1>
+    <p>Você pode acessar o meu <a href="https://github.com/gustavoguanabara/html-css/tree/master/desafios/modulo-01/d006" target="_blank" rel="external">repositório público no GitHub</a></p> <!--Target Blank é para abrir em outra aba / rel= "" é recomendado--> <!--
+        ‣ _blank vai abrir o link em uma nova janela em branco 
+        ‣ _self vai abrir o link na janela ou frame atual (padrão) 
+        ‣ _top vai desfazer todos os frames e abrir o destino no navegador completo 
+        ‣ _parent similar ao uso do _top em uma referência à janela mãe 
+        ‣ nome-do-frame caso esteja usando frames, indicar o nome da janela a abrir-->
+    <p>Você também pode acessar meu <a href="https://www.youtube.com/">canal no YouTube</a></p><!--Assim não abe em outra aba, usado quando o link leva para o seu site-->
+    <h1>Usando links internos</h1>
+    <p>Está é a primeira página do site. Se você quiser, pode acessar também a minha <a href="pag002.html" rel="next">segunda página</a></p>
+    <p>Voc~e também pode acessar a nossa <a href="noticias/pag003.html" rel="next">página de notícias</a>.</p>
+    <h1>Links para download</h1>
+    <a href="livro/01 - História da Internet.pdf" download="livro/01 - História da Internet.pdf" type="application/pdf">Baixar livro em PDf</a>
+    <a href="livro/01 - História da Internet.zip" download="livro/01 - História da Internet.zip" type="application/zip">Baixar livro em ZIP</a>
+    </body>
+</html>

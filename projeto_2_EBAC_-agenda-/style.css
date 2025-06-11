@@ -1,0 +1,84 @@
+/*
+paleta de cores 
+#323875
+#7D82B0
+#191F58
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+body {
+    background-color: #7D82B0;
+    padding: 100px;
+
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+
+header img {
+    width: 64px;
+    margin: 0 16px;
+}
+
+.conatiner {
+    max-width: 960px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+}
+
+form input {
+    font-size: 24px;
+    background-color: #fff;
+    border: none;
+    border-radius: 8px;
+    padding: 5px;
+    margin: 10px 10px;
+}
+
+form button {
+    background-color: aquamarine;
+    font-size: 24px;
+    font-weight: bold;
+    padding: 8px;
+    margin: 8px 8px;
+    border-radius: 15px;
+    border: #191F58;
+    cursor: pointer;
+}
+
+table {
+    width: 100%;
+    background-color: #32387570;
+    border-radius: 15px;
+    border: 2px solid #191F58;
+}
+
+table th {
+    font-size: 24px;
+    font-weight: bold;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+    padding: 16px;
+}
+
+table td {
+    padding: 8px 0;
+    text-align: center;
+    font-size: 18px;
+    border-bottom: 2px solid rgba(25, 31, 88, 0.329);
+}

@@ -1,0 +1,78 @@
+/*
+Fontes
+roboto-regular, roboto-bold {
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", serif;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background-color: antiquewhite;
+}
+
+.container{
+    max-width: 1024px;
+    margin: auto;
+}
+
+h1{
+    text-align: center;
+    padding: 8px 0px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+
+form input{
+    font-size: 16px;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 8px;
+    }
+
+form button{
+    margin-bottom: 8px;
+    padding: 8px;
+    border-radius: 10px;
+    border: 1px solid black;
+
+
+
+}
+
+form button:hover{
+    cursor: pointer;
+    background-color: rgb(2, 199, 2);
+    color: white;
+}
+
+ul{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 50px auto;
+}
+
+li{
+display: flex;
+align-items: center;
+list-style: none;
+margin-bottom: 10px;
+min-width: 200px;
+font-size: 18px;
+}
+
+li input {
+    margin-right: 10px;
+}
+
+.finished {
+    text-decoration: line-through;
+}

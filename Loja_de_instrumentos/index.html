@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playwrite+HU:wght@100..400&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Harmonia musical</title>
+</head>
+
+<body>
+    <header class="navbar navbar-expand-lg sticky-top p-4" id="cabecalho">
+        <div class="container">
+            <h1 class="navbar-brand m-0">
+                Harmonia Musical
+            </h1>
+            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu-navegacao">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <nav class="navbar-collapse collapse justify-content-end" id="menu-navegacao">
+                <ul class="nav nav-pills d-block d-md-flex">
+                    <li class="nav-item fw-bold">
+                        <a href="#sobre-a-loja" class="nav-link active">
+                            <i class="bi bi-house-door-fill px-1"></i>
+                            Sobre a loja
+                        </a>
+                    </li>
+                    <li class="nav-item fw-bold">
+                        <a href="#instrumentos" class="nav-link">
+                            <i class="bi bi-boombox px-1"></i>
+                            Instrumentos
+                        </a>
+                    </li>
+                    <li class="nav-item fw-bold">
+                        <a href="#aula-de-musica" class="nav-link">
+                            <i class="bi bi-music-note px-1"></i>
+                            Aulas de música
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div data-bs-spy="scroll" data-bs-sooth-scrool="true" data-bs-target="#cabecalho">
+        <section id="sobre-a-loja">
+            <div class="carousel slide carousel-fade d-md-flex" id="carousel">
+                <div class="carousel-inner" data-bs-ride="carousel">
+                    <div class="carousel-item active" data-bs-interval="3000">
+                        <img class="d-block w-100" src="imagens/violao_carousel.jpg" alt="Viol">
+                    </div>
+                    <div class="carousel-item d-block w-100" data-bs-interval="3000">
+                        <img class="d-block w-100" src="imagens/teclado.jpg" alt="Teclado">
+                    </div>
+                    <div class="carousel-item d-block w-100" data-bs-interval="3000">
+                        <img class="d-block w-100" src="imagens/violino.jpg" alt="Violino">
+                    </div>
+                </div>
+                <button type="button" data-bs-target="#carousel" class="carousel-control-prev" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button type="button" data-bs-target="#carousel" class="carousel-control-next" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+                <div class="carousel-indicators">
+                    <buton type="button" data-bs-target="#carousel" data-bs-slide-to="0" class="active"></buton>
+                    <buton type="button" data-bs-target="#carousel" data-bs-slide-to="1"></buton>
+                    <buton type="button" data-bs-target="#carousel" data-bs-slide-to="2"></buton>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <h2 class="pt-4 section-tittle">Sobre nossa loja</h2>
+                    <p id="paragrafo-sobre-a-loja">
+                        Bem-vindo à Hamonia Musical, sua loja de instrumentos musicais! Desde a nossa fundação, nos
+                        dedicamos a trazer música para a vida das pessoas. Aqui, você encontra uma ampla seleção de
+                        instrumentos para todos os níveis, desde iniciantes até músicos profissionais.
+                        Nossa missão é oferecer qualidade, paixão e inspiração musical, ajudando cada cliente a
+                        encontrar o instrumento perfeito para suas necessidades. Com uma equipe especializada, suporte
+                        personalizado e produtos das melhores marcas do mercado, estamos prontos para fazer parte da sua
+                        jornada musical.
+                        Seja para montar sua primeira banda, refinar seu talento ou simplesmente explorar novos sons, na
+                        Melodia Perfeita você encontra tudo o que precisa para expressar sua criatividade. Vamos fazer
+                        música juntos!
+                    </p>
+                </div>
+                <div class="row pb-4">
+                    <div class="col-4">
+                        <img class="w-100" src="imagens/loja1.webp" alt="Foto do interior da loja">
+                    </div>
+                    <div class="col-4">
+                        <img class="w-100" src="imagens/loja2.webp" alt="Foto do interior da loja">
+                    </div>
+                    <div class="col-4">
+                        <img class="w-100" src="imagens/loja3.webp" alt="Foto do interior da loja">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="instrumentos">
+            <div class="container">
+                <div class="row">
+                    <h2 class="section-tittle pb-4">
+                        Instrumentos à venda
+                    </h2>
+                </div>
+                <div class="row pb-4">
+                    <div class="card col-3 mx-3" style="width: 18rem;">
+                        <div class="card-header section-tittle">
+                            Piano sem cauda
+                        </div>
+                        <img src="imagens/piano_sem_cauda.jpeg" class="card-img-top" alt="paino sem cauda">
+                        <div class="card-body">
+                            <p class="card-text">Piano digital de alta qualidade, projetado para oferecer uma
+                                experiência autêntica e realista ao tocar piano.</p>
+                            <a href="#" class="btn btn-primary">Comprar</a>
+                        </div>
+                    </div>
+                    <div class="card col-3 mx-3" style="width: 18rem;">
+                        <div class="card-header section-tittle">
+                            Violão com cordas de aço
+                        </div>
+                        <img src="imagens/violao.jpeg" class="card-img-top" alt="Violão">
+                        <div class="card-body">
+                            <p class="card-text">Violão Folk com visual diferenciado e boa sonoridade. Equipado com o
+                                préamplificador com controles de frequência e afinador.</p>
+                            <a href="#" class="btn btn-primary">Comprar</a>
+                        </div>
+                    </div>
+                    <div class="card col-3 mx-3" style="width: 18rem;">
+                        <div class="card-header section-tittle">
+                            Banjo
+                        </div>
+                        <img src="imagens/banjo.jpg" class="card-img-top" alt="Banjo">
+                        <div class="card-body">
+                            <p class="card-text">Banjo Eletroacústico Estudante apresenta verniz natural fosco e aro em
+                                alumínio polido. A Rozini é uma indústria nacional que produz de forma artesanal.</p>
+                            <a href="#" class="btn btn-primary">Comprar</a>
+                        </div>
+                    </div>
+                    <div class="card col-3 mx-3" style="width: 18rem;">
+                        <div class="card-header">
+                            Caixa de bateria 14"
+                        </div>
+                        <img src="imagens/tom_bateria.jpeg" class="card-img-top" alt="Caixa de bateria">
+                        <div class="card-body">
+                            <p class="card-text">Caixa de Guerra 14" x 15cms Alumínio Fosco.
+                                Os instrumentos são construídos com alumínio resistente de 0,8mm de espessura.</p>
+                            <a href="#" class="btn btn-primary">Comprar</a>
+                        </div>
+                    </div>
+                </div>
+        </section>
+        <section id="aula-de-musica">
+            <div class="container">
+                <div class="row">
+                    <h2 class="section-tittle pb-2">
+                        Aulas de música
+                    </h2>
+                    <p class="pb-2">
+                        Tenha aula de música com os melhores professores. Aprenda rápido e desenvolva seu conhecimento
+                        músical.
+                    </p>
+                    <h4 class="section-tittle pb-3">
+                        Entre em contato e agende uma aula experimental!
+                    </h4>
+                    <form class="pb-4">
+                        <div class="mb-3">
+                            <label for="nome" class="form-label">Nome completo</label>
+                            <input type="nome" class="form-control" id="nome">
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="email">
+                        </div>
+                        <div class="mb-3">
+                            <label for="telefone" class="form-label">Telefone</label>
+                            <input type="tel" class="form-control" id="telefone">
+                        </div>
+                        <button type="submit" class="btn btn-primary">Enviar</button>
+                    </form>
+                </div>
+                <div class="row">
+                    <h4 class="section-tittle">Nossos contatos</h4>
+                    <p>
+                        Tel: (53) 99999900
+                        E-mail: xxxxx@gmail.com
+                    </p>
+                </div>
+            </div>
+        </section>
+            <footer>
+                <p>Site criado por <a href="https://https://github.com/MickaelDutra" target="_blank">Mickael Dutra</a> para o <a
+                        href="https://ebaconline.com.br" target="_blank">Escola Britânica de Artes Criativas e Tecnologia</a>.</p>
+            </footer>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
