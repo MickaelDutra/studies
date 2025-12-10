@@ -1,0 +1,34 @@
+@use 'variaveis';
+
+.modal-overlay{
+    display: none;
+    width: 50%;
+    margin: 0 auto;
+    padding: 18px;
+    &__tittle{
+        margin: 24px 0;
+        text-align: center;
+        display: block;
+        width: 100%;
+        color: variaveis.$corDeTextoSecundaria;
+    }
+
+    &__text{
+        text-align: justify;
+    }
+
+    &__poster{
+        display: flex;
+        justify-content: center;
+        img{
+            max-width: 400px;
+        }
+    }
+
+    &--is-active{
+        display: block;
+        border-radius: 32px;
+        background-color: green;
+    }
+    
+}

@@ -3,6 +3,7 @@
 @use 'header';
 @use 'hero';
 @use 'filmography';
+@use 'modal_overlay';
 
 body{
     background-color: variaveis.$corDeFundoPrincipal;

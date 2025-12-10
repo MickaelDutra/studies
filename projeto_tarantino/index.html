@@ -2,18 +2,16 @@
 <html lang="pt-br">
 
 <head>
-    <meta charset="UTF__8">
-    <meta name="viewport" content="width=device__width, initial__scale=1.0">
-    <!____ bootstrap ____>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384__sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-    <!____ Font ____>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
-    <!____ Font ____>
-    <link rel="stylesheet" href="dist/style/main.css">
-    <title>Diretores</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+            integrity="sha384__sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+            crossorigin="anonymous">
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
+                <link rel="stylesheet" href="dist/style/main.css">
+                <title>Diretores</title>
 </head>
 
 <body>
@@ -59,67 +57,107 @@
         <div class="filmography__container">
             <h1 class="filmography__header">SUA FILMOGRAFIA IMPECÁVEL</h1>
 
-            <ul class="filmography">
+            <ul class="filmography__list">
                 <li class="filmography__item">
                     <div class="item__content">
                         <div class="item__year">1992</div>
-                        <img src="dist/assets/image/poster/caes_aluguel.png" alt="Reservoir Dogs">
+                        <a class="open-modal-link" href="#">
+                            <img src="dist/assets/image/poster/caes_aluguel.png" alt="Reservoir Dogs">
+                        </a>
                     </div>
                 </li>
 
                 <li class="filmography__item">
                     <div class="item__content">
                         <div class="item__year">1994</div>
-                        <img src="build/src/assets/image/poster/Pulp_Fiction_cover.jpg" alt="Pulp Fiction">
+                        <a class="open-modal-link" href="#">
+                            <img src="build/src/assets/image/poster/Pulp_Fiction_cover.jpg" alt="Pulp Fiction">
+                        </a>
                     </div>
                 </li>
 
                 <li class="filmography__item">
                     <div class="item__content">
                         <div class="item__year">1997</div>
-                        <img src="build/src/assets/image/poster/Jackie_Brown_1997.jpg" alt="Jackie Brown">
+                        <a class="open-modal-link" href="#">
+                            <img src="build/src/assets/image/poster/Jackie_Brown_1997.jpg" alt="Jackie Brown">
+                        </a>
                     </div>
                 </li>
 
                 <li class="filmography__item">
                     <div class="item__content">
                         <div class="item__year">2003</div>
-                        <img src="build/src/assets/image/poster/Kill_Bill_poster.jpg" alt="Kill Bill">
+                        <a class="open-modal-link" href="#">
+                            <img src="build/src/assets/image/poster/Kill_Bill_poster.jpg" alt="Kill Bill">
+                        </a>
                     </div>
                 </li>
 
                 <li class="filmography__item">
                     <div class="item__content">
                         <div class="item__year">2007</div>
-                        <img src="build/src/assets/image/poster/a prova de morte.jpg" alt="À Prova de Morte">
+                        <a class="open-modal-link" data-filme-id="death_proof" href="#">
+                            <img src="build/src/assets/image/poster/a prova de morte.jpg" alt="À Prova de Morte">
+                        </a>
                     </div>
                 </li>
 
                 <li class="filmography__item">
                     <div class="item__content">
                         <div class="item__year">2012</div>
-                        <img src="build/src/assets/image/poster/Django livre.jpg" alt="Django Livre">
+                        <a class="open-modal-link" href="#">
+                            <img src="build/src/assets/image/poster/Django livre.jpg" alt="Django Livre">
+                        </a>
                     </div>
                 </li>
 
                 <li class="filmography__item">
                     <div class="item__content">
                         <div class="item__year">2015</div>
-                        <img src="build/src/assets/image/poster/hateful_eight.jpg" alt="Os Oito Odiados">
+                        <a class="open-modal-link" href="#">
+                            <img src="build/src/assets/image/poster/hateful_eight.jpg" alt="Os Oito Odiados">
+                        </a>
                     </div>
                 </li>
 
                 <li class="filmography__item">
                     <div class="item__content">
                         <div class="item__year">2019</div>
-                        <img src="build/src/assets/image/poster/era uma vez em holywood.jpg"
-                            alt="Era Uma Vez em Hollywood">
+                        <a class="open-modal-link" href="#">
+                            <img src="build/src/assets/image/poster/era uma vez em holywood.jpg"
+                                alt="Era Uma Vez em Hollywood">
+                        </a>
                     </div>
                 </li>
 
             </ul>
         </div>
     </section>
+
+    <div id="modal-overlay" class="modal-overlay">
+        <h2 class="modal-overlay__tittle" id="modal-title">
+            Sinópse
+        </h2>
+        <p class="modal-overlay__text" id="modal-body">
+            Joe Cabot (Lawrence Tierney), um experiente criminoso, reuniu seis bandidos para um grande roubo de
+            diamantes, mas estes seis homens não sabem nada um sobre os outros e cada um utiliza uma cor como codinome.
+            Porém durante o assalto algo saiu errado, pois diversos policiais esperavam no local. Mr. White (Harvey
+            Keitel) levou Mr. Orange (Tim Roth), que na fuga levou um tiro na barriga e morrerá se não tiver logo
+            atendimento médico, para o armazém onde tinha sido combinado que todos se encontrassem. Logo depois chegou
+            Mr. Pink (Steve Buscemi), que está certo que um deles é um policial disfarçado e eles precisam descobrir
+            quem os traiu. Em um clima de acusações mútuas a situação fica cada vez mais insustentável.
+        </p>
+
+        <h2 class="modal-overlay__tittle">
+            Poster
+        </h2>
+        <div class="modal-overlay__poster">
+            <img src="/build/src/assets/image/poster/caes_aluguel.png" alt="Caes de aluguel">
+        </div>
+    </div>
+
+    <script src="build/src/script/main.js"></script>
 </body>
 
 </html>
