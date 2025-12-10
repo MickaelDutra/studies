@@ -71,6 +71,10 @@
                     height: auto;
                     display: block;
                     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.4);
+
+                    &:hover{
+                        cursor: pointer;
+                    }
                 }
 
                 .item__year {

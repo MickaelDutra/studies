@@ -1,11 +1,35 @@
 @use 'variaveis';
 
-.modal-overlay{
+
+
+.modal-overlay {
     display: none;
-    width: 50%;
-    margin: 0 auto;
-    padding: 18px;
-    &__tittle{
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.432);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 3;
+
+    &--inside {
+        position: absolute;
+        background-color: variaveis.$corDeFundoPrincipal;
+        width: 50%;
+        height: 70%;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        z-index: 3;
+        transform: translate(50%, 20%);
+        border-radius: 32px;
+        padding: 18px;
+    }
+
+    &__tittle {
         margin: 24px 0;
         text-align: center;
         display: block;
@@ -13,22 +37,18 @@
         color: variaveis.$corDeTextoSecundaria;
     }
 
-    &__text{
+    &__text {
         text-align: justify;
     }
 
-    &__poster{
+    &__poster {
         display: flex;
         justify-content: center;
-        img{
-            max-width: 400px;
+
+        img {
+            height: 350px;
+            box-shadow: 10px 10px 12px black;
+
         }
     }
-
-    &--is-active{
-        display: block;
-        border-radius: 32px;
-        background-color: green;
-    }
-    
 }
