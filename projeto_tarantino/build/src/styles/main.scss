@@ -4,6 +4,7 @@
 @use 'hero';
 @use 'filmography';
 @use 'modal_overlay';
+@use 'actors';
 
 body{
     background-color: variaveis.$corDeFundoPrincipal;
