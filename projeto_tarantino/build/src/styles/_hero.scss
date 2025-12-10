@@ -1,0 +1,43 @@
+@use 'variaveis';
+
+.hero {
+
+    background-image: linear-gradient(to bottom right, variaveis.$corDeFundoPrincipal 60%, #2A0500);
+
+    &__container {
+        padding: 24px;
+        height: calc(100vh - 90px);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__description {
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        padding-right: 24px;
+        max-width: 45%;
+        &__tittle {
+            text-align: end;
+            color: variaveis.$corDeTextoSecundaria;
+            text-transform: uppercase;
+        }
+
+        &__text {
+            text-align: justify;
+            line-height: 200%;
+            max-width: 600px;
+        }
+    }
+
+    &__image {
+        max-width: 45%;
+        overflow: hidden;
+        padding-left: 24px;
+        img {
+            object-fit: cover;
+        }
+    }
+
+}

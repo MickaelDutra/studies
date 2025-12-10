@@ -1,0 +1,36 @@
+@use 'variaveis';
+
+.header {
+    background-color: variaveis.$corDoHeader;
+
+    &__container {
+        padding: 0 24px;
+        height: 90px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    
+    &__tittle {
+        color: variaveis.$corDeTextoPrincipal;
+        text-transform: uppercase;
+        font-family: variaveis.$fontePrincipal;
+        
+    }
+
+    &__menu {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+
+
+        &__item {
+            padding: 24px;
+            text-decoration: none;
+            color: variaveis.$corDeTextoPrincipal;
+            text-transform: uppercase;
+            font-family: variaveis.$fontePrincipal;
+        }
+    }
+}
