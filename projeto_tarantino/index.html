@@ -4,8 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384__sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
@@ -47,7 +46,11 @@
             </div>
 
             <div class="hero__image">
-                <img src="dist/assets/image/Sobre tarantino 2.png" alt="Foto de revista com artigo sobre o Tarantino">
+                <picture>
+                    <source srcset="dist/assets/image/tarantino_mobile.jpg" media="(max-width: 1024px)">
+                    <img src="dist/assets/image/Sobre tarantino 2.png"
+                        alt="Foto de revista com artigo sobre o Tarantino">
+                </picture>
             </div>
         </div>
     </section>
@@ -304,6 +307,37 @@
             </div>
         </div>
     </section>
+
+    <footer class="footer">
+        <p>
+            Não achou que era o contato do Tarantino né?
+        </p>
+
+        <span>Página desenvolvida por Mickael Dutra para fins de estudo</span>
+
+        <ul class="footer__list">
+            <li class="footer__list__item">
+                <a href="https://www.linkedin.com/in/mickael-dutra/">
+                    <i class="bi bi-linkedin"></i>
+                </a>
+            </li>
+            <li class="footer__list__item">
+                <a href="https://www.youtube.com/@DevInConstru%C3%A7%C3%A3o">
+                    <i class="bi bi-youtube"></i>
+                </a>
+            </li>
+            <li class="footer__list__item">
+                <a href="https://github.com/MickaelDutra">
+                    <i class="bi bi-github"></i>
+                </a>
+            </li>
+            <li class="footer__list__item">
+                <a href="https://www.instagram.com/mickael_dutra05/">
+                    <i class="bi bi-instagram"></i>
+                </a>
+            </li>
+        </ul>
+    </footer>
     <script src="build/src/script/main.js"></script>
 </body>
 

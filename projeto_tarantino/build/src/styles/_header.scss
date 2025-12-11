@@ -9,6 +9,19 @@
         display: flex;
         justify-content: space-around;
         align-items: center;
+
+        @media (max-width: 768px) {
+            flex-direction: column;
+            padding: 0;
+            
+            .header__tittle{
+                margin-top: 12px;
+            }
+
+            .header__menu__item{
+                padding: 12px;
+            }
+        }
     }
     
     &__tittle {
