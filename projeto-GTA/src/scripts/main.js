@@ -20,7 +20,7 @@ const countdown = setInterval(() => {
     const minToEnvent = Math.floor((timeToEvent % hourMS) / minMS);
     const secToEnvent = Math.floor((timeToEvent % minMS) / 1000);
 
-    document.getElementById('date').innerHTML =  (`será lançado em: ${dayToEvent}d ${hourToEvent}h ${minToEnvent}m ${secToEnvent}s`)
+    document.getElementById('date').innerHTML =  (`será lançado em: <br>${dayToEvent}d ${hourToEvent}h ${minToEnvent}m ${secToEnvent}s`)
 
     if(timeToEvent < 0){
         clearInterval(countdown);
