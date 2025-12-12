@@ -1,0 +1,17 @@
+@use '../variables';
+
+.button {
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 12px;
+    white-space: nowrap;
+
+    &--primary {
+        background-color: variables.$btn-primary;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+    }
+}

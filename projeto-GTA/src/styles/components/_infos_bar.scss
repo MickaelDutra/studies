@@ -1,0 +1,53 @@
+@use '../variables';
+
+.infos-bar {
+    background-color: #fff;
+    padding: 16px 36px;
+    margin-top: 64px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &__infos {
+        display: flex;
+        gap: 120px;
+        list-style: none;
+
+        @media (max-width: 1024px) {
+            gap: 12px;
+        }
+
+        &__item {
+            color: variables.$secondarytextcolor;
+
+            strong {
+                display: block;
+                color: variables.$secondarytextcolor;
+                font-weight: 700;
+                display: block;
+                margin-bottom: 8px;
+            }
+        }
+    }
+
+    @media (max-width:768px) {
+        display: block;
+        margin-top: 32px;
+
+        &__infos {
+            display: block;
+            margin-bottom: 12px;
+
+            &__item {
+                margin-bottom: 12px;
+            }
+
+        }
+
+        &__button {
+            margin-top: 12px;
+            width: 100%;
+        }
+    }
+}
