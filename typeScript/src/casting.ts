@@ -1,0 +1,1 @@
+let idade: any = 25;
